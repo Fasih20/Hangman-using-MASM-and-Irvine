@@ -6,7 +6,7 @@ Or you could instal MASM from http://www.masm32.com, install it and download Irv
 
 \masm32\bin\ml /c /Zd /coff hangman.asm
 
-\masm32\bin\Link E:\masm32\lib\kernel32.lib E:\masm32\lib\user32.lib E:\masm32\lib\gdi32.lib E:\masm32\lib\msvcrt.lib E:\masm32\lib\Irvine32.lib/Subsystem:console hanger.obj
+\masm32\bin\Link /Subsystem:console E:\masm32\lib\kernel32.lib E:\masm32\lib\user32.lib E:\masm32\lib\gdi32.lib E:\masm32\lib\msvcrt.lib E:\masm32\lib\Irvine32.lib hangman.obj
 
 Replace the E drive letter with the drive were MASM is installed, and if it's in a folder add that to the above command too.
 
